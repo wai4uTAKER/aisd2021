@@ -35,22 +35,22 @@ TEST(Methods, OtherMethods) {
 	p2::DecartList DL4(1);
 
 	EXPECT_NEAR(DL4.chord(), 0.707107, err);
-	EXPECT_NEAR(DL4.polar(1), 0.38153, err);
+	EXPECT_NEAR(DL4.polar(1), 0.603341, err);
 	EXPECT_NEAR(DL4.curvatureR(), 0.0883883, err);
 	EXPECT_NEAR(DL4.curvatureN(), 0.5, err);
 	EXPECT_NEAR(DL4.area(), 0.166667, err);
-	EXPECT_NEAR(DL4.highD(), 0.548686, err);
-	EXPECT_NEAR(DL4.distanceD(), 0.706678, err);
+	EXPECT_NEAR(DL4.highD(), 0.69197, err);
+	EXPECT_NEAR(DL4.distanceD(),0.408248, err);
 
 	DL4.setN(-1);
 
 	EXPECT_NEAR(DL4.chord(), -0.707107, err);
-	EXPECT_NEAR(DL4.polar(1), -0.38153, err);
+	EXPECT_NEAR(DL4.polar(1), -0.603341, err);
 	EXPECT_NEAR(DL4.curvatureR(), -0.0883883, err);
 	EXPECT_NEAR(DL4.curvatureN(), -0.5, err);
 	EXPECT_NEAR(DL4.area(), 0.166667, err);
-	EXPECT_NEAR(DL4.highD(), -0.548686, err);
-	EXPECT_NEAR(DL4.distanceD(), -0.706678, err);
+	EXPECT_NEAR(DL4.highD(), -0.69197, err);
+	EXPECT_NEAR(DL4.distanceD(), -0.408248, err);
 
 	DL4.setN(0);
 
