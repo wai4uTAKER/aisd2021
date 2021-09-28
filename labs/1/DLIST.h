@@ -21,7 +21,7 @@ namespace p2 {
 		double curvatureR() const { return n / (8 * sqrt(2)); }
 		double curvatureN() const { return n / 2; }
 		double area() const { return n * n / 6; }
-		double highD() const { 2n /(3*sqrt(2) *0.68125}
+		double highD() const { return 2*n /(3*sqrt(2) *0.68125}
 		double distanceD() const { return n / sqrt(6); }
 	};
 
